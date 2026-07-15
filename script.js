@@ -584,4 +584,119 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // ==========================================
+    // 10. 3D Rotate/Tilt Cards on Hover
+    // ==========================================
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            
+            // Mouse pointer coordinates relative to card
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Calculate center of the card
+            const xc = rect.width / 2;
+            const yc = rect.height / 2;
+            
+            // Calculate angles based on mouse offsets from card center
+            const angleX = (yc - y) / 15; // Max 10-15 degrees tilt
+            const angleY = (x - xc) / 15;
+            
+            // Apply 3D rotation transform
+            card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            // Reset to normal with a smooth transition
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+        });
+    });
+
+    // ==========================================
+    // 11. Auto-Rotating Testimonials Slider
+    // ==========================================
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('testimonial-prev-btn');
+    const nextBtn = document.getElementById('testimonial-next-btn');
+    
+    let currentSlideIndex = 0;
+    let autoRotateInterval = null;
+    
+    const showSlide = (index) => {
+        if (slides.length === 0) return;
+        
+        // boundary wrap around
+        if (index >= slides.length) currentSlideIndex = 0;
+        else if (index < 0) currentSlideIndex = slides.length - 1;
+        else currentSlideIndex = index;
+        
+        // Toggle active slide
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlideIndex].classList.add('active');
+        
+        // Toggle active dot
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[currentSlideIndex]) {
+            dots[currentSlideIndex].classList.add('active');
+        }
+    };
+    
+    const nextSlide = () => {
+        showSlide(currentSlideIndex + 1);
+    };
+    
+    const prevSlide = () => {
+        showSlide(currentSlideIndex - 1);
+    };
+    
+    // Auto rotation setup
+    const startAutoRotate = () => {
+        stopAutoRotate();
+        autoRotateInterval = setInterval(nextSlide, 5000); // cycle every 5 seconds
+    };
+    
+    const stopAutoRotate = () => {
+        if (autoRotateInterval) {
+            clearInterval(autoRotateInterval);
+        }
+    };
+    
+    // Manual triggers
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            startAutoRotate(); // reset timer
+        });
+    }
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            startAutoRotate(); // reset timer
+        });
+    }
+    
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-slide-to'));
+            showSlide(index);
+            startAutoRotate(); // reset timer
+        });
+    });
+    
+    // Pause auto-rotation on mouse hover over testimonials
+    const testimonialsSection = document.getElementById('testimonials');
+    if (testimonialsSection) {
+        testimonialsSection.addEventListener('mouseenter', stopAutoRotate);
+        testimonialsSection.addEventListener('mouseleave', startAutoRotate);
+    }
+    
+    // Start auto rotation loops
+    startAutoRotate();
+    
 });
+
