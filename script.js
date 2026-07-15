@@ -698,66 +698,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start auto rotation loops
     startAutoRotate();
 
-    // ==========================================
-    // 12. GSAP ScrollTrigger 3D Cylindrical Image Gallery
-    // ==========================================
-    const setupHorizontalScroll = () => {
-        const track = document.getElementById('horizontal-gallery-track');
-        const wrap = document.getElementById('horizontal-scroll-gallery');
-        
-        if (!track || !wrap) return;
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-        
-        gsap.registerPlugin(ScrollTrigger);
-        
-        const calculateScrollAmount = () => {
-            const trackWidth = track.scrollWidth;
-            const viewportWidth = window.innerWidth;
-            return -(trackWidth - viewportWidth + 100); // 100px padding cushion
-        };
-        
-        // 1. Move the track horizontally as vertical scroll proceeds
-        const scrollTween = gsap.to(track, {
-            x: () => calculateScrollAmount(),
-            ease: "none",
-            scrollTrigger: {
-                trigger: wrap,
-                start: "top top",
-                end: "bottom bottom",
-                scrub: 1,
-                pin: true,
-                invalidateOnRefresh: true
-            }
-        });
-        
-        // 2. Dynamic 3D cylindrical rotate & scale transition on each card
-        const cards = track.querySelectorAll('.gallery-item-card');
-        cards.forEach(card => {
-            gsap.fromTo(card, 
-                { 
-                    rotateY: -35, 
-                    scale: 0.85, 
-                    z: -150 
-                },
-                {
-                    keyframes: [
-                        { rotateY: 0, scale: 1, z: 0, duration: 0.5 },
-                        { rotateY: 35, scale: 0.85, z: -150, duration: 0.5 }
-                    ],
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: card,
-                        containerAnimation: scrollTween, // Sync to the horizontal scroll tween
-                        start: "left right", // starts when card enters right side of viewport
-                        end: "right left",   // ends when card leaves left side of viewport
-                        scrub: true
-                    }
-                }
-            );
-        });
-    };
-    setupHorizontalScroll();
-    
 });
 
 
