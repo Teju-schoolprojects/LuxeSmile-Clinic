@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeSmile Clinic | Premium & Luxury Cosmetic Dentistry</title>
+    <meta name="description" content="Experience bespoke, world-class dental care at LuxeSmile Clinic. Specializing in luxury cosmetic dentistry, dental implants, Invisalign, and teeth whitening in a spa-like environment.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SVG Gradients Definition for Custom Icons -->
+    <svg width="0" height="0" style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <linearGradient id="gold-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#e5cda8" />
+                <stop offset="50%" stop-color="#c5a880" />
+                <stop offset="100%" stop-color="#91724a" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header-glass">
+        <div class="container header-container">
+            <a href="#home" class="logo" id="header-logo">
+                <span class="logo-accent">Luxe</span>Smile
+                <span class="logo-sub">CLINIC</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="nav-home">Home</a>
+                <a href="#about" class="nav-link" id="nav-about">The Experience</a>
+                <a href="#services" class="nav-link" id="nav-services">Services</a>
+                <a href="#gallery" class="nav-link" id="nav-gallery">Gallery</a>
+                <a href="#faq" class="nav-link" id="nav-faq">FAQs</a>
+                <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-gold btn-book-trigger" id="header-book-btn">Book Consultation</button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle fade-in-up">Bespoke Boutique Dentistry</span>
+                <h1 class="hero-title fade-in-up delay-1">The Art of a<br><span class="text-gold">Perfect Smile</span></h1>
+                <p class="hero-description fade-in-up delay-2">
+                    Experience world-class dental care in a luxury wellness sanctuary. Where cutting-edge clinical precision meets unparalleled spa-like comfort.
+                </p>
+                <div class="hero-actions fade-in-up delay-3">
+                    <button class="btn btn-gold btn-book-trigger" id="hero-cta-book">Reserve Appointment</button>
+                    <a href="#services" class="btn btn-outline" id="hero-cta-explore">Explore Treatments</a>
+                </div>
+            </div>
+            <div class="hero-metrics fade-in-up delay-4">
+                <div class="metric-item">
+                    <span class="metric-number">15+</span>
+                    <span class="metric-label">Years Excellence</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-number">10k+</span>
+                    <span class="metric-label">Perfect Smiles</span>
+                </div>
+                <div class="metric-divider"></div>
+                <div class="metric-item">
+                    <span class="metric-number">99.8%</span>
+                    <span class="metric-label">Satisfaction Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Experience (About) Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container grid-container">
+            <div class="about-image-container">
+                <div class="about-image-wrapper">
+                    <img src="assets/room.jpg?v=indian" alt="LuxeSmile Treatment Suite" class="about-img" id="about-clinic-img">
+                    <div class="about-image-overlay"></div>
+                </div>
+                <div class="experience-card">
+                    <i class="fa-solid fa-gem gold-icon"></i>
+                    <h4>Clinical Excellence</h4>
+                    <p>Award-winning clinical specialists utilizing dental microscopes and low-radiation diagnostics.</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag text-gold">The Experience</span>
+                <h2 class="section-title">A Sanctuary of Well-Being</h2>
+                <p class="section-description">
+                    We have reimagined the dental visit as an indulgent ritual. At LuxeSmile, clinical superiority is blended seamlessly with elements of a premium health spa. 
+                </p>
+                <div class="experience-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Relaxing Atmosphere</h5>
+                            <p>Aromatherapy, calming soundscapes, and noise-canceling headphones to ease any tension.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Advanced Tech Suite</h5>
+                            <p>Digital 3D intraoral scanning, pain-free laser procedures, and private luxury suites.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Bespoke Aesthetic Design</h5>
+                            <p>Every cosmetic procedure is customized using digital facial mapping to match your unique features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag text-gold">Our Services</span>
+                <h2 class="section-title">Bespoke Treatments</h2>
+                <p class="section-subtitle">Discover a comprehensive suite of dental solutions designed with luxury, precision, and longevity in mind.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card" data-service="cosmetic" id="service-card-cosmetic">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg-icon" viewBox="0 0 24 24" fill="url(#gold-icon-gradient)">
+                            <path d="M12 2c-.6 0-1 .4-1.3.8-.4-.3-1-.5-1.7-.5-1.7 0-3 1.3-3 3 0 2.2 1.3 3.3 2 4.7.7 1.4.3 3-.3 4.6-.5 1.4-1.2 2.9-1.2 4.4 0 2.2 1.8 4 4 4 .6 0 1.1-.1 1.5-.4.4.3.9.4 1.5.4 2.2 0 4-1.8 4-4 0-1.5-.7-3-1.2-4.4-.6-1.6-1-3.2-.3-4.6.7-1.4 2-2.5 2-4.7 0-1.7-1.3-3-3-3-.7 0-1.3.2-1.7.5C13 2.4 12.6 2 12 2zm0 1.5c.3 0 .5.2.7.5.3.4.4.8.4 1.2s-.1.8-.4 1.2c-.2.3-.4.5-.7.5s-.5-.2-.7-.5c-.3-.4-.4-.8-.4-1.2s.1-.8.4-1.2c.2-.3.4-.5.7-.5z"/>
+                            <path d="M3 4l.6 1.4L5 6l-1.4.6L3 8l-.6-1.4L1 6l1.4-.6zM20 5l.4 1 .8.4-1 .4-.4 1-.4-1-1-.4 1-.4z" fill="#f7f5f0"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Cosmetic Dentistry</h3>
+                    <p class="service-short-desc">Reshape and beautify your teeth with hand-crafted porcelain veneers, composite bonding, and personalized smile makeovers.</p>
+                    <button class="btn-text service-modal-trigger" data-service-id="cosmetic" id="btn-service-cosmetic">View Treatments <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card" data-service="implants" id="service-card-implants">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg-icon" viewBox="0 0 24 24" fill="url(#gold-icon-gradient)">
+                            <path d="M12 2c-2.8 0-3.5 1.5-3.5 3.5 0 2.3.8 3.3 1.4 4.5.3.6.5 1.1.6 1.7h3c.1-.6.3-1.1.6-1.7.6-1.2 1.4-2.2 1.4-4.5C15.5 3.5 14.8 2 12 2z"/>
+                            <path d="M10 13h4v2h-4v-2zm1 3h2v2h-2v-2zm0 3.5h2v1.5c0 .3-.2.5-.5.5h-1c-.3 0-.5-.2-.5-.5v-1.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Dental Implants</h3>
+                    <p class="service-short-desc">Permanent, natural-feeling restorations using advanced computer-guided surgery for optimal placement and minimal healing times.</p>
+                    <button class="btn-text service-modal-trigger" data-service-id="implants" id="btn-service-implants">View Treatments <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card" data-service="invisalign" id="service-card-invisalign">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gold-icon-gradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 14c0-4.5 4-8 9-8s9 3.5 9 8"/>
+                            <path d="M6 14c0-3 2.7-5.5 6-5.5s6 2.5 6 5.5"/>
+                            <path d="M12 2.5v3M5 6.5l2 2.5M19 6.5l-2 2.5" stroke="#f7f5f0" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Invisalign® Aligners</h3>
+                    <p class="service-short-desc">Virtually invisible orthodontic therapy. Straighten your teeth discreetly with highly advanced custom clear aligners.</p>
+                    <button class="btn-text service-modal-trigger" data-service-id="invisalign" id="btn-service-invisalign">View Treatments <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card" data-service="whitening" id="service-card-whitening">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg-icon" viewBox="0 0 24 24" fill="url(#gold-icon-gradient)">
+                            <path d="M12 4c-2.5 0-3.2 1.2-3.2 3 0 2 .7 2.8 1.2 3.8.3.5.4.9.5 1.4.1.3.4.5.7.5s.6-.2.7-.5c.1-.5.2-.9.5-1.4.5-1 1.2-1.8 1.2-3.8 0-1.8-.7-3-3.2-3z"/>
+                            <path d="M3 12h3M18 12h3M5.5 5.5l2 2M16.5 5.5l-2 2" stroke="#f7f5f0" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Advanced Whitening</h3>
+                    <p class="service-short-desc">Safeguard your enamel while achieving a shade up to eight times brighter using our exclusive clinic-only laser teeth whitening.</p>
+                    <button class="btn-text service-modal-trigger" data-service-id="whitening" id="btn-service-whitening">View Treatments <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before / After Gallery Section -->
+    <section id="gallery" class="gallery-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag text-gold">Smile Transformations</span>
+                <h2 class="section-title">The Artistry of LuxeSmile</h2>
+                <p class="section-subtitle">Real results from real patients. Drag the slider to reveal the flawless smile transformation.</p>
+            </div>
+            
+            <!-- Before & After Comparison Slider -->
+            <div class="slider-wrapper" id="smile-slider-wrapper">
+                <div class="comparison-slider" id="before-after-slider">
+                    <!-- Before Image (Base) -->
+                    <img src="assets/before.jpg?v=indian" alt="Smile Before Cosmetic Treatment" class="slider-img before-img">
+                    <!-- After Image (Overlay) -->
+                    <div class="resize-container" id="after-image-container">
+                        <img src="assets/after.jpg?v=indian" alt="Smile After Veneers & Whitening Treatment" class="slider-img after-img">
+                    </div>
+                    <!-- Handle -->
+                    <div class="slider-handle" id="slider-handle">
+                        <div class="handle-line"></div>
+                        <div class="handle-button">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div class="handle-line"></div>
+                    </div>
+                    <!-- Labels -->
+                    <span class="slider-label label-before">LuxeSmile</span>
+                    <span class="slider-label label-after">AFTER</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Appointment Section -->
+    <section id="contact" class="booking-section scroll-reveal">
+        <div class="container grid-container-booking">
+            <div class="contact-info-container">
+                <span class="section-tag text-gold">Reach Out</span>
+                <h2 class="section-title">Begin Your Journey</h2>
+                <p class="section-description">
+                    Ready to elevate your dental wellness? Schedule a private consultation with our clinical director today. Walk-ins are not accommodated, keeping the environment private and serene for our guests.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6>Call / Text Private Line</h6>
+                            <p>+91 6304693676</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6>Email Concierge</h6>
+                            <p>MySmile@luxesmile.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6>Bespoke Office Location</h6>
+                            <p>Level 2, SLN Terminus Mall, Jayabheri Enclave, Gachibowli, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clinic-hours">
+                    <h5>Clinic Hours</h5>
+                    <div class="hours-row"><span>Monday - Friday</span><span>8:00 AM - 7:00 PM</span></div>
+                    <div class="hours-row"><span>Saturday</span><span>9:00 AM - 4:00 PM</span></div>
+                    <div class="hours-row"><span>Sunday</span><span>By Exclusive Appointment Only</span></div>
+                </div>
+            </div>
+            
+            <!-- Booking Wizard Card -->
+            <div class="booking-card-wrapper">
+                <div class="booking-card" id="inline-booking-card">
+                    <div class="booking-card-header">
+                        <h4>Reserve Consultation</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="booking-progress-fill"></div>
+                        </div>
+                        <div class="steps-indicator">
+                            <span class="step-num active" id="indicator-step-1">1</span>
+                            <span class="step-num" id="indicator-step-2">2</span>
+                            <span class="step-num" id="indicator-step-3">3</span>
+                        </div>
+                    </div>
+                    <div class="booking-card-body">
+                        <!-- Step 1: Select Service -->
+                        <div class="booking-step active" id="booking-step-1">
+                            <h5 class="step-title">Select Treatment Area</h5>
+                            <div class="service-selection-grid">
+                                <label class="service-option">
+                                    <input type="radio" name="booking-service" value="Cosmetic Makeover" checked>
+                                    <div class="option-content">
+                                        <i class="fa-solid fa-sparkles"></i>
+                                        <span>Cosmetic Makeover</span>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="booking-service" value="Dental Implants">
+                                    <div class="option-content">
+                                        <i class="fa-solid fa-tooth"></i>
+                                        <span>Dental Implants</span>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="booking-service" value="Invisalign Aligners">
+                                    <div class="option-content">
+                                        <i class="fa-solid fa-align-center"></i>
+                                        <span>Invisalign® Ortho</span>
+                                    </div>
+                                </label>
+                                <label class="service-option">
+                                    <input type="radio" name="booking-service" value="Laser Teeth Whitening">
+                                    <div class="option-content">
+                                        <i class="fa-solid fa-wand-magic"></i>
+                                        <span>Laser Whitening</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-gold btn-next-step" data-current-step="1">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Choose Date & Time -->
+                        <div class="booking-step" id="booking-step-2">
+                            <h5 class="step-title">Select Preferred Time</h5>
+                            
+                            <!-- Date Selector -->
+                            <div class="date-selector-wrapper">
+                                <label for="booking-date" class="form-label">Consultation Date</label>
+                                <input type="date" id="booking-date" class="form-input" min="" required>
+                            </div>
+
+                            <!-- Time Slots -->
+                            <div class="time-slots-wrapper">
+                                <label class="form-label">Available Slots</label>
+                                <div class="time-slots-grid" id="time-slots-grid">
+                                    <label class="time-option">
+                                        <input type="radio" name="booking-time" value="09:00 AM" checked>
+                                        <span>09:00 AM</span>
+                                    </label>
+                                    <label class="time-option">
+                                        <input type="radio" name="booking-time" value="11:00 AM">
+                                        <span>11:00 AM</span>
+                                    </label>
+                                    <label class="time-option">
+                                        <input type="radio" name="booking-time" value="01:30 PM">
+                                        <span>01:30 PM</span>
+                                    </label>
+                                    <label class="time-option">
+                                        <input type="radio" name="booking-time" value="03:00 PM">
+                                        <span>03:00 PM</span>
+                                    </label>
+                                    <label class="time-option">
+                                        <input type="radio" name="booking-time" value="05:30 PM">
+                                        <span>05:30 PM</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-outline btn-prev-step" data-current-step="2"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                                <button type="button" class="btn btn-gold btn-next-step" data-current-step="2">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact Details -->
+                        <div class="booking-step" id="booking-step-3">
+                            <h5 class="step-title">Guest Information</h5>
+                            <form id="booking-form-element" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label for="booking-name" class="form-label">Full Name</label>
+                                    <input type="text" id="booking-name" class="form-input" placeholder="e.g. Johnathan Vance" required>
+                                </div>
+                                <div class="form-group-row">
+                                    <div class="form-group">
+                                        <label for="booking-email" class="form-label">Email Address</label>
+                                        <input type="email" id="booking-email" class="form-input" placeholder="e.g. john@domain.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="booking-phone" class="form-label">Private Phone</label>
+                                        <input type="tel" id="booking-phone" class="form-input" placeholder="e.g. +91 98765 43210" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-notes" class="form-label">Special Requests / Clinical History (Optional)</label>
+                                    <textarea id="booking-notes" class="form-input form-textarea" placeholder="Let our clinical concierge know of any special requirements or past concerns."></textarea>
+                                </div>
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-outline btn-prev-step" data-current-step="3"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                                    <button type="submit" class="btn btn-gold" id="btn-submit-booking">Request Booking <i class="fa-solid fa-check"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Step 4: Success & Confirmation (Hidden by default) -->
+                        <div class="booking-step" id="booking-step-success">
+                            <div class="success-message-content">
+                                <div class="success-icon-wrapper">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                                <h4>Request Submitted</h4>
+                                <p class="success-text">Thank you, <span id="summary-name" class="text-white"></span>. Your consultation request for <strong id="summary-service" class="text-gold"></strong> has been submitted.</p>
+                                <div class="appointment-summary-box">
+                                    <p><strong>Scheduled Date:</strong> <span id="summary-date"></span></p>
+                                    <p><strong>Scheduled Time:</strong> <span id="summary-time"></span></p>
+                                    <p><strong>Location:</strong> Level 2, SLN Terminus Mall, Gachibowli, Hyderabad</p>
+                                </div>
+                                <p class="follow-up-info">Our clinical concierge will call you on <span id="summary-phone"></span> within the hour to verify your slot and customize your boutique experience.</p>
+                                <button type="button" class="btn btn-gold btn-reset-booking" id="btn-reset-booking">Book Another Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag text-gold">Questions</span>
+                <h2 class="section-title">Frequently Answered</h2>
+                <p class="section-subtitle">Discover details about our procedures, technology, and clinical standards.</p>
+            </div>
+            
+            <div class="faq-accordion" id="faq-accordion">
+                <!-- Item 1 -->
+                <div class="faq-item" id="faq-item-1">
+                    <button class="faq-question" aria-expanded="false" id="faq-btn-1">
+                        <span>What distinguishes LuxeSmile from a traditional dental clinic?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            LuxeSmile offers a highly personalized clinical journey. Unlike standard practices that prioritize volume, we book one guest at a time in our luxury penthouse suite, ensuring zero wait times and full privacy. Furthermore, our clinical specialists combine high-magnification dental microscopy with premium aesthetic skin-matching algorithms for teeth restoration. 
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="faq-item" id="faq-item-2">
+                    <button class="faq-question" aria-expanded="false" id="faq-btn-2">
+                        <span>What is your policy on patient comfort and dental anxiety?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Patient comfort is at the core of our brand. We offer premium amenities including noise-canceling headsets with custom soundscapes, aromatherapy diffusion, heated ergonomic dental chairs, and optional mild conscious sedation (nitrous oxide or oral conscious sedation) administered by certified specialists.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="faq-item" id="faq-item-3">
+                    <button class="faq-question" aria-expanded="false" id="faq-btn-3">
+                        <span>How long do cosmetic restorations like veneers take?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            Most smile transformations are completed in just two visits. During the first visit, we take digital intraoral scans and prepare your teeth (if necessary) to seat temporary veneers. On the second visit, usually 10-14 days later, your custom, hand-layered porcelain veneers are permanently bonded.
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="faq-item" id="faq-item-4">
+                    <button class="faq-question" aria-expanded="false" id="faq-btn-4">
+                        <span>Do you accept insurance or offer financing?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            LuxeSmile works as an out-of-network clinic to guarantee we never compromise on treatment design or dental material choices. Our concierge team manages all paperwork, submissions, and filing directly with your PPO provider for reimbursement. We also offer bespoke interest-free in-house installments for smile design services.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-column">
+                <a href="#home" class="logo footer-logo" id="footer-logo">
+                    <span class="logo-accent">Luxe</span>Smile
+                    <span class="logo-sub">CLINIC</span>
+                </a>
+                <p class="brand-bio">
+                    Crafting flawless aesthetics and pristine dental health for New York's elite.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram" id="social-ig"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn" id="social-in"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook" id="social-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-column">
+                <h5>Navigation</h5>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">The Experience</a></li>
+                    <li><a href="#services">Bespoke Treatments</a></li>
+                    <li><a href="#gallery">Before & After</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-column">
+                <h5>Specialties</h5>
+                <ul class="footer-links">
+                    <li><a href="#services">Smile Makeovers</a></li>
+                    <li><a href="#services">Porcelain Veneers</a></li>
+                    <li><a href="#services">Computer-Guided Implants</a></li>
+                    <li><a href="#services">Laser Teeth Whitening</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter-column">
+                <h5>Luxe Insights</h5>
+                <p>Subscribe to receive aesthetic news, dental health updates, and exclusive openings.</p>
+                <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Private Email" class="newsletter-input" required id="newsletter-email">
+                    <button type="submit" class="btn btn-gold newsletter-btn" id="newsletter-submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+                <p id="newsletter-message" class="newsletter-feedback"></p>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 LuxeSmile Clinic. All Rights Reserved. Private Dental Practice.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Detail Modals (Dynamic Modal Structure) -->
+    <div class="modal-backdrop" id="service-detail-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-header-image" id="modal-service-image">
+                    <!-- Set via JS -->
+                </div>
+                <div class="modal-details-content">
+                    <span class="section-tag text-gold" id="modal-service-tag">Treatment Detail</span>
+                    <h3 id="modal-service-name">Service Name</h3>
+                    <p class="modal-description" id="modal-service-desc">Service full description...</p>
+                    
+                    <div class="modal-features-list">
+                        <h5>Key Benefits</h5>
+                        <ul id="modal-service-benefits">
+                            <!-- Populated dynamically by JS -->
+                        </ul>
+                    </div>
+
+                    <div class="modal-meta-info">
+                        <div class="meta-item">
+                            <span class="meta-label">Duration</span>
+                            <span class="meta-value" id="modal-service-duration">2 Sessions</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Downtime</span>
+                            <span class="meta-value" id="modal-service-downtime">None</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-cta-box">
+                        <button class="btn btn-gold btn-book-trigger" id="modal-cta-book-btn">Book Consultation for this Treatment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal (Popup Version for general triggers) -->
+    <div class="modal-backdrop" id="general-booking-modal">
+        <div class="modal-card modal-card-booking">
+            <button class="modal-close" id="booking-modal-close-btn" aria-label="Close modal">&times;</button>
+            <div id="booking-modal-placeholder">
+                <!-- Javascript will clone the inline booking card here to avoid duplicating wizard code! -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
