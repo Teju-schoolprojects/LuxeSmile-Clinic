@@ -697,6 +697,40 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Start auto rotation loops
     startAutoRotate();
+
+    // ==========================================
+    // 12. GSAP ScrollTrigger Horizontal Image Gallery
+    // ==========================================
+    const setupHorizontalScroll = () => {
+        const track = document.getElementById('horizontal-gallery-track');
+        const wrap = document.getElementById('horizontal-scroll-gallery');
+        
+        if (!track || !wrap) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        
+        gsap.registerPlugin(ScrollTrigger);
+        
+        const calculateScrollAmount = () => {
+            const trackWidth = track.scrollWidth;
+            const viewportWidth = window.innerWidth;
+            return -(trackWidth - viewportWidth + 100); // 100px Cushion padding
+        };
+        
+        gsap.to(track, {
+            x: () => calculateScrollAmount(),
+            ease: "none",
+            scrollTrigger: {
+                trigger: wrap,
+                start: "top top",
+                end: "bottom bottom",
+                scrub: 1, // Smooth scrub matching scroll speed
+                pin: true, // Pin sticky container while scrolling horizontally
+                invalidateOnRefresh: true // Re-calculate dimensions on viewport resize
+            }
+        });
+    };
+    setupHorizontalScroll();
     
 });
+
 
