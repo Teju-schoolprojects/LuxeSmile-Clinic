@@ -1930,14 +1930,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .horizontal-gallery-container-outer {
     width: 100%;
     overflow: hidden;
+    perspective: 1500px;
+    transform-style: preserve-3d;
 }
 
 .horizontal-gallery-track {
     display: flex;
-    gap: 40px;
-    padding: 0 100px;
+    gap: 60px;
+    padding: 0 150px;
     width: max-content;
     will-change: transform;
+    transform-style: preserve-3d;
 }
 
 .gallery-item-card {
@@ -1949,8 +1952,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid var(--glass-border);
     padding: 10px;
     background-color: var(--bg-dark-card);
-    transition: var(--transition-smooth);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .gallery-item-card:hover {
     border-color: var(--color-gold-primary);
