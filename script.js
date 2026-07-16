@@ -698,6 +698,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start auto rotation loops
     startAutoRotate();
 
+    // ==========================================
+    // 12. Swiper.js Draggable Clinic Gallery Setup
+    // ==========================================
+    const setupClinicSwiper = () => {
+        if (typeof Swiper !== 'undefined') {
+            new Swiper('.clinic-swiper', {
+                loop: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                },
+                lazy: {
+                    loadPrevNext: true,
+                    loadOnTransitionStart: true
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    dynamicBullets: true
+                },
+                effect: 'slide',
+                speed: 800
+            });
+        }
+    };
+    setupClinicSwiper();
+    
 });
-
-

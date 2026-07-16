@@ -1753,6 +1753,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .testimonial-slider-wrapper {
         padding: 30px 16px;
     }
+    
+    .clinic-swiper {
+        height: 350px;
+    }
 }
 
 /* --- Testimonials Section --- */
@@ -1886,6 +1890,121 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-color: var(--color-gold-primary);
     transform: scale(1.2);
 }
+
+/* --- Draggable Swiper Gallery Tour Slider --- */
+.gallery-slider-section {
+    background-color: var(--bg-dark-base);
+    border-top: 1px solid rgba(197, 168, 128, 0.08);
+}
+
+.clinic-swiper {
+    width: 100%;
+    max-width: 900px;
+    height: 520px;
+    margin: 0 auto;
+    border: 1px solid var(--glass-border);
+    padding: 10px;
+    background-color: var(--bg-dark-card);
+    position: relative;
+}
+
+.clinic-swiper .swiper-wrapper {
+    height: 100%;
+}
+
+.clinic-swiper .swiper-slide {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-dark-base);
+}
+
+.clinic-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.clinic-swiper .swiper-slide:hover img {
+    filter: brightness(0.95);
+    transform: scale(1.04);
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: rgba(7, 9, 14, 0.9);
+    border: 1px solid var(--glass-border);
+    padding: 8px 16px;
+    backdrop-filter: blur(4px);
+    z-index: 5;
+    transition: var(--transition-fast);
+}
+
+.slide-caption span {
+    font-family: var(--font-sub);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--color-gold-primary);
+}
+
+.clinic-swiper .swiper-slide:hover .slide-caption {
+    border-color: var(--color-gold-accent);
+}
+
+/* Custom Swiper Controls Styles */
+.clinic-swiper .swiper-button-next,
+.clinic-swiper .swiper-button-prev {
+    color: var(--color-gold-primary);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(7, 9, 14, 0.75);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(4px);
+    transition: var(--transition-fast);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.clinic-swiper:hover .swiper-button-next,
+.clinic-swiper:hover .swiper-button-prev {
+    opacity: 1;
+    visibility: visible;
+}
+
+.clinic-swiper .swiper-button-next:hover,
+.clinic-swiper .swiper-button-prev:hover {
+    border-color: var(--color-gold-accent);
+    background-color: rgba(197, 168, 128, 0.15);
+    color: var(--color-gold-accent);
+}
+
+.clinic-swiper .swiper-button-next::after,
+.clinic-swiper .swiper-button-prev::after {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.clinic-swiper .swiper-pagination-bullet {
+    background-color: var(--color-text-muted);
+    opacity: 0.3;
+    transition: var(--transition-fast);
+}
+
+.clinic-swiper .swiper-pagination-bullet-active {
+    background: var(--gold-gradient);
+    opacity: 1;
+    width: 18px;
+    border-radius: 4px;
+}
+
 
 
 

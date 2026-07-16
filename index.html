@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -326,6 +328,71 @@
         </div>
     </section>
 
+    <!-- Draggable Gallery Slider Section (Swiper.js) -->
+    <section id="gallery-tour" class="gallery-slider-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag text-gold">Gallery Tour</span>
+                <h2 class="section-title">The Clinic Spaces</h2>
+                <p class="section-subtitle">Swipe or drag to explore our boutique suites, advanced technology, and aesthetic treatments.</p>
+            </div>
+            
+            <!-- Swiper Slider -->
+            <div class="swiper clinic-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/lobby.jpg?v=indian" alt="LuxeSmile Clinic Reception Lobby" loading="lazy">
+                        <div class="slide-caption">
+                            <span>01 / RECEPTION LOBBY</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/room.jpg?v=indian" alt="Bespoke Treatment Suite" loading="lazy">
+                        <div class="slide-caption">
+                            <span>02 / CLINICAL SUITE</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/cosmetic.jpg?v=indian" alt="Cosmetic Veneers Placement" loading="lazy">
+                        <div class="slide-caption">
+                            <span>03 / SMILE DESIGN</span>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/implants.jpg?v=indian" alt="Guided Dental Implants" loading="lazy">
+                        <div class="slide-caption">
+                            <span>04 / GUIDED IMPLANTS</span>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/invisalign.jpg?v=indian" alt="Discreet Orthodontic Aligners" loading="lazy">
+                        <div class="slide-caption">
+                            <span>05 / INVISALIGN ORTHO</span>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <img src="assets/whitening.jpg?v=indian" alt="Laser Teeth Whitening" loading="lazy">
+                        <div class="slide-caption">
+                            <span>06 / ENAMEL WHITENING</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swiper Navigation Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Swiper Pagination Dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Interactive Appointment Section -->
     <section id="contact" class="booking-section scroll-reveal">
@@ -697,6 +764,8 @@
         </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Script File -->
     <script src="script.js"></script>
 </body>
